@@ -1,0 +1,20 @@
+{ 
+    "include": [
+        //ts파일이 어디 있는지를 지정, 파일 목록을 include 목록에 넣으면 됨
+        "src"
+    ],
+    "compilerOptions": {
+        //ts를 js로 컴파일한 것을 어디에 저장할 것인지 지정
+        "outDir": "build",
+        //ts를 어떤 버전의 js로 컴파일 할 것인지 지정
+        "target": "ES6",
+        //코드가 어떤 환경에서 실행될지를 지정. DOM은 브라우저에서 실행될 것이라는 것.
+        //(document등의 자동완성 기능이 제공됨)
+        //즉, 해당하는 d.ts 파일을 불러오는 것
+        "lib": ["ES6"],
+        //ts의 보호 기능을 엄격하게 적용
+        "strict": true,
+        "esModuleInterop": true,
+        "module": "CommonJs"
+    }
+}
